@@ -1,0 +1,39 @@
+<section class="contact" id="contact-section">
+  <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+  <p class="sub-heading">Lorem ipsum dolor sit amet consectetur.</p>
+  <div class="seperator"></div>
+
+  <form class="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="name">
+      <input
+        type="text"
+        formControlName="firstName"
+        class="first-name"
+        required
+        placeholder="First name"
+      />
+      <input
+        type="text"
+        formControlName="lastName"
+        class="last-name"
+        placeholder="Last name"
+      />
+    </div>
+    <input
+      type="email"
+      required
+      class="email"
+      placeholder="Email"
+      formControlName="email"
+    />
+    <textarea
+      class="message"
+      placeholder="Message"
+      required
+      formControlName="message"
+    ></textarea>
+    <button class="btn contact-btn" type="submit" [disabled]="form.invalid">
+      contact
+    </button>
+  </form>
+</section>
