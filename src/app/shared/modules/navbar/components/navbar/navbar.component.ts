@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   activateLink: string = 'home';
+  isMenuOpened: boolean = false;
+
+  openMenu() {
+    this.isMenuOpened = !this.isMenuOpened;
+  }
 }
