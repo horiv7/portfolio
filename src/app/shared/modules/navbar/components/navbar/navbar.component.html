@@ -1,0 +1,49 @@
+<nav class="navbar">
+  <h1 class="brand">logo</h1>
+  <div class="toggle-btn">
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="links-container">
+    <li class="links-item">
+      <a
+        class="link"
+        routerLink=""
+        fragment=""
+        [class.active]="activateLink == 'home'"
+        (click)="activateLink = 'home'"
+        >home</a
+      >
+    </li>
+    <li class="links-item">
+      <a
+        class="link"
+        routerLink=""
+        fragment="project-section"
+        [class.active]="activateLink == 'project'"
+        (click)="activateLink = 'project'"
+        >project</a
+      >
+    </li>
+    <li class="links-item">
+      <a
+        class="link"
+        routerLink=""
+        fragment="about-section"
+        [class.active]="activateLink == 'about'"
+        (click)="activateLink = 'about'"
+        >about</a
+      >
+    </li>
+    <li class="links-item">
+      <a
+        class="link"
+        routerLink=""
+        fragment="contact-section"
+        [class.active]="activateLink == 'contact'"
+        (click)="activateLink = 'contact'"
+        >contact</a
+      >
+    </li>
+  </ul>
+</nav>

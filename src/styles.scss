@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  background: #1d1d1d;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+}
+
+@media (max-width: 996px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
