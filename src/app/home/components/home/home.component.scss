@@ -15,7 +15,7 @@
 }
 
 .hero-heading {
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -24,43 +24,13 @@
   color: #ff3559;
 }
 
-.profession {
-  width: fit-content;
-  display: block;
-  margin: 10px 0 20px;
-  margin-left: auto;
-  text-transform: capitalize;
-  position: relative;
-  padding: 10px 20px;
-  color: #1d1d1d;
-  z-index: 2;
-}
 
-.profession::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e3e3e3;
-  z-index: -1;
-  transform: skewX(10deg);
-}
 
-.profession::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100px;
-  width: 100px;
-  height: 2px;
-  background: #e3e3e3;
-}
 
 .info {
   line-height: 30px;
   margin-bottom: 50px;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -71,6 +41,12 @@
   color: #fff;
   text-transform: capitalize;
   border: none;
+}
+.about-para {
+  span {
+    margin: 20px 0 !important;
+    padding-bottom: 10px;
+  }
 }
 
 .about {
