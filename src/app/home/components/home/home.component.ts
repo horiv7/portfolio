@@ -11,13 +11,12 @@ import { ProjectInterface } from '../../types/project.interface';
 export class HomeComponent implements OnInit {
   projects$!: Observable<ProjectInterface[]>;
   filterTag!: string;
-  tags = ['all', 'javaScript', 'ui/Ux', 'backend', 'fullStack'];
+  tags = ['all', 'bootstrap', 'angular', 'ui/ux', 'backend', 'fullStack'];
   constructor() {}
 
   ngOnInit(): void {
     this.projects$ = getData();
     this.filterTag = this.tags[0];
-
   }
   toggleFilter(tag: string): void {
     this.filterTag = tag;

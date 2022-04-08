@@ -1,7 +1,10 @@
-<div class="project-card">
+<div class="project-card" (click)="openModal(project.name)">
   <img src="../../../../assets/img/{{ project.image }}" alt="" />
   <div class="content">
     <h1 class="project-name">{{ project.name }}</h1>
     <span class="tags">{{ project.tags }}</span>
   </div>
+  <app-modal id="{{ project.name }}" [project]="project">
+    <button class="btn close" (click)="closeModal(project.name)">Close</button>
+  </app-modal>
 </div>

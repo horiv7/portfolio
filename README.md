@@ -4,6 +4,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Live: https://portfolio-ce3b1.web.app
 
+My personal portfolio was not online. I decided to create one like many others developers. Wherever the Turks go, Mujo will go too.
+
+
+My goal was to create a simple presentation site. I wanted it in dark mode. A contact form was also a must.
+
+
+Searches led me to this UI. The frontend was done in Angular. In order to implement the backend contact form, I created a simple server in NodeSs using the Gmail service.
+
+
+Then I wrote a copy and here it is.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

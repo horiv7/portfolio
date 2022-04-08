@@ -24,9 +24,6 @@
   color: #ff3559;
 }
 
-
-
-
 .info {
   line-height: 30px;
   margin-bottom: 50px;
@@ -89,10 +86,11 @@
 }
 
 .left-col::before {
-  content: "No, It's not me";
+  content: "Yes, It's me";
   position: absolute;
   right: 0;
   top: -20px;
+  color: #ff3559;
 }
 
 .left-col::after {
@@ -195,7 +193,7 @@
   .home {
     flex-direction: column-reverse;
     height: fit-content;
-    padding-bottom: 50px;
+    margin-top: 0;
   }
   .home .image {
     width: 250px;
