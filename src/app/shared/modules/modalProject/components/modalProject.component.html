@@ -1,0 +1,32 @@
+<div class="app-modal" *ngIf="projectProps as project">
+  <div class="app-modal-body">
+    <div class="modal-para">
+      <h2 class="heading">{{ project.name }}</h2>
+      <h4 class="sub-heading">{{ project.description }}</h4>
+      <img
+        src="../../../../assets/img/{{ project.image }}"
+        alt=""
+        class="modal-image"
+      />
+      <br />
+      <ng-container *ngFor="let p of project.paragraphs">
+        <p>
+          {{ p }}
+        </p>
+        <br />
+      </ng-container>
+    </div>
+    <div class="btn-container">
+      <div class="">
+        <button class="btn live" (click)="openUrl(project.liveUrl)">
+          Live preview
+        </button>
+        <button class="btn git" (click)="openUrl(project.githubUrl)">
+          Github code
+        </button>
+      </div>
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
+<div class="app-modal-background"></div>

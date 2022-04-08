@@ -2,6 +2,7 @@
   position: relative;
   cursor: pointer;
   display: block;
+  border: #fff solid 1px;
 }
 
 .project-card img {
@@ -19,7 +20,6 @@
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
-  align-items: center;
   transition: 0.5s;
   text-transform: capitalize;
   opacity: 0;
@@ -27,8 +27,9 @@
 
 .project-name {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .tags {
@@ -46,9 +47,23 @@
   display: none;
 }
 
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  background: #ff3559;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+}
+
 @media (max-width: 996px) {
   html {
     font-size: 14px;
+  }
+  .project-name {
+ 
+    margin-top: .5em;
   }
 }
 @media (max-width: 500px) {
