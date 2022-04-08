@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
-Live: https://portfolio-ce3b1.web.app
+Live: https://horiv7.xyz/
 
 My personal portfolio was not online. I decided to create one like many others developers. Wherever the Turks go, Mujo will go too.
 
