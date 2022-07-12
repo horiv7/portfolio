@@ -4,14 +4,22 @@ import { getData } from '../../services/projects.data';
 import { ProjectInterface } from '../../types/project.interface';
 
 @Component({
-  selector: 'ba-home',
+  selector: 'ps-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   projects$!: Observable<ProjectInterface[]>;
   filterTag!: string;
-  tags = ['all', 'bootstrap', 'angular', 'ui/ux', 'backend', 'fullStack'];
+  tags = [
+    'all',
+    'sass',
+    'bootstrap',
+    'angular',
+    'ui/ux',
+    'backend',
+    'fullStack',
+  ];
   constructor() {}
 
   ngOnInit(): void {

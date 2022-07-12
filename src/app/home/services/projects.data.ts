@@ -14,7 +14,7 @@ const projects = [
       `Then I wrote a copy and here it is.`,
     ],
     githubUrl: 'https://github.com/horiv7/portfolio',
-    liveUrl: 'https://portfolio-ce3b1.web.app',
+    liveUrl: 'https://horiv7.xyz/',
   },
   {
     name: 'Bible App',
@@ -44,7 +44,23 @@ const projects = [
       `This is a prototype for CRUD operations. It's not a big app. It is possible to do a lot with this Rest Api. For now, I keep it simple, but I'll add features as time goes on.`,
     ],
     githubUrl: 'https://github.com/horiv7/blogApp',
-    liveUrl: 'https://github.com/horiv7/portfolio',
+    liveUrl: 'https://blogapp-6a9d6.web.app/',
+  },
+  {
+    name: 'I have Landing Page',
+    tags: '#ui/ux, #sass', 
+    image: 'landing-page.png',
+    description: ' Nice UI converted to Responsive Static Site',
+    paragraphs: [
+      ` This is example of Landing page.`,
+      `The situation was that I didn't have a nice example page before. This case would allow me to demonstrate my experience with UI Design.
+      I got a job application task from my who was applying to an IT company.`,
+      `This UI design was supposed to be turned into responsive static code. `,
+      `The website was built with HTML and CSS using the SASS preprocessor. I was trying to be precise. That's why I had a lot of media queries.`,
+      `This is the first live version.`,
+    ],
+    githubUrl: 'https://github.com/horiv7/ihave-trial-assignment',
+    liveUrl: 'https://landingpage-5e1bb.web.app/',
   },
 ];
 export function getData() {
